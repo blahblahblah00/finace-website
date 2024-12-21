@@ -1,4 +1,5 @@
 {
+  "homepage": "https://blahblahblah00.github.io/finace-website",
   "name": "finace-website",
   "private": true,
   "version": "0.0.0",
@@ -6,11 +7,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.2.0",
     "gsap": "^3.12.5",
     "lord-icon-element": "^4.1.2",
     "lottie-web": "^5.12.2",
